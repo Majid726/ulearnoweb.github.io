@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>css display</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+html{
+   scroll-behavior:smooth;}
+
+*{margin:0;
+padding:0;
+font-family: 'Poppins', sans-serif;}
+
+    .introduction{
+        padding: 2em;
+        background-color:gainsboro!important;
+    }
+    
+.navbar{
+ opacity: 0.9;}
+
+ /*design drop box*/
+ .drop-down{
+ margin-top: 5em;}
+ 
+ .dropbtn {
+ background-color:gray !important;
+ color: white;
+ padding: 16px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;}
+ 
+ 
+ .dropbtn:hover{
+ background-color:green !important;}
+ 
+ .dropbtn:hover, .dropbtn:focus {
+ background-color: #3e8e41;
+ }
+ 
+ 
+ #myInput {
+ box-sizing: border-box;
+ background-image: url('searchicon.png');
+ background-position: 14px 12px;
+ background-repeat: no-repeat;
+ font-size: 16px;
+ padding: 14px 20px 12px 45px;
+ border: none;
+ border-bottom: 1px solid #ddd;
+ }
+ 
+ #myInput:focus {outline: 3px solid #ddd;}
+ 
+ .dropdown {
+ position: relative;
+ display: inline-block;
+ }
+ 
+ .dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f6f6f6;
+ min-width: 230px;
+ overflow: auto;
+ border: 1px solid #ddd;
+ z-index: 1;
+height:37em !important;
+ }
+ 
+ .dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;}
+ 
+ 
+ .dropdown a:hover {background-color: #ddd;}
+ 
+ .show {display: block;}
+ 
+ /*design drop end */
+    
+ /*css-display start*/
+     .css-display{ 
+    padding:2em;
+    height:62.5em;}
+    
+    pre{
+    border-radius:0 0 2em 2em;
+    padding:2em;}
+    
+    .display li{
+        display: inline-block;
+        margin-left: 10px;
+        list-style-type:none;
+    }
+   
+    /*css-display end*/
+    
+    
+ /*copyright*/
+  .copyright{
+     margin-top: 10em;
+   background-color:black!important;
+   width:100%;}
+   
+ .copyright h6{
+     color:white!important;
+     text-align: center;
+     font-size:13px;
+ margin-top:1.4em;
+ padding-bottom:1em;
+ opacity: 0.8;}
+  
+   /*copyright closed*/
+
+
+    
+ </style>
+    
+</head>
+
+<body>
+   
+   <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img src="../images/logo.jpeg" width=50px height=40px></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="../index.html">HOME</a>
+     </li>
+   
+      <li class="nav-item">
+      <a class="nav-link" href="../websites.html">WEBSITES</a>
+      </li>
+        
+         <!-- Dropdown -->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-success" href="#" id="navbardrop" data-toggle="dropdown">
+      LEARN
+      </a>
+      <div class="dropdown-menu">
+     <a class="dropdown-item" href="../learn html/learnhtml.html">Html</a>
+      <a class="dropdown-item text-success" href="learncss.html">Css</a>
+      <a class="dropdown-item" href="/MAJID%20WEB/personal%20website/learn%20bootsrap/learnbootrap.html">Bootsrap</a>
+      </div>
+      </li>
+      
+      <li class="nav-item">
+      <a class="nav-link" href="../Batmanrunning(1).html">DESIGN FRAMES</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!---navbar closed--->
+
+
+<!--design search box-->
+    <div class="dropdown drop-down ml-1">
+    <button onclick="myFunction()" class="dropbtn">Css Learning Topics</button>
+    <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    
+  
+      <a href="learncss.html">Get Started</a>
+    <a href="css_structure_.html">Structure of Css</a>
+    <a href="css_comment.html">Comments</a>
+    <a href="css-color.html">Color</a>
+    <a href="css_background_color.html">Background</a>    
+    <a href="css-borders.html">Borders</a>
+    <a href="css-margin.html">Margins</a>
+    <a href="css-padding.html">Paddings</a>
+    <a href="css-height-width.html">Height/Width</a>
+    <a href="css-fonts.html">Fonts</a>
+    <a href="css-image.html">Image</a>
+    <a href="css_-class_-id.html">Class And Id</a> 
+    <a href="csso-overflow.html">Overflow</a>
+    <a href="css-float.html">Float</a>
+    <a href="css-display-inline.html"  class="text-white bg-success">Display</a>
+    <a href="css-align.html">Align</a>   
+    <a href="css-opacity.html">Opacity</a>   
+    <a href="css-hover.html">Hover</a> 
+    <a href="css-navigationbar.html">Navigation-bar</a> 
+    <a href="css-photo-galary.html">Photo-Galary</a>   
+    <a href="web layout.html">web layout</a> 
+        
+    </div>
+    </div>
+    
+    <!--design search box closed-->
+    
+        <!---css-display start-->
+        <div class="css-display container text-white bg-dark mt-5">
+        <h2 class="text-center text-white">Display</h2>
+         
+<div class="display text-success">
+ <li>Home</li>
+ <li>About</li>
+ <li>Photo</li>
+ </div>
+    
+<pre class="bg-white">
+<h4>Add in Html</h4>
+&lt;!doctype html>
+               
+&lt;html>
+    
+&lt;head>
+                      
+&lt;title>display&lt;/title>
+     
+&lt;/head>
+            
+&lt;body>
+      
+&lt;div class="display">
+
+<a class="text-primary">&lt;li>Home&lt;/li>
+&lt;li>About&lt;/li>
+&lt;li>Photo&lt;/li></a>
+
+ &lt;/div>
+            
+ &lt;/body>
+            
+ &lt;/html>
+            
+ <H4>Add in Css</H4>
+  
+.display li{
+<a class="text-primary">
+display: inline-block;
+list-style-type:none;(for list or bullets are none)
+margin-left: 10px;</a> }
+(you can <a class="text-primary">hidden</a> for hide display or also you write <a class="text-primary">none</a> for hide)                
+    </pre>
+        
+        </div>
+        <!--css-display-end-->
+    
+<!--copyright-->
+<div class="copyright container-fluid bg-dark text-light">
+
+<div class="row">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+<h6>Copyright © All rights Reserved: Ulearno</h6>
+</div>
+
+</div>
+</div>
+<!--copyright closed-->
+
+               
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    a[i].style.display = "";
+    } else {
+    a[i].style.display = "none";
+    }
+    }
+    
+    }
+    </script>
+
+</body>
+</html>

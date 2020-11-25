@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>batmanruning animation code</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+html{
+   scroll-behavior:smooth;}
+
+*{margin:0;
+padding:0;
+font-family: 'Poppins', sans-serif;}
+
+.navbar{
+ opacity: 0.9}
+ 
+ .navbar-toggler,.navbar-toggler:hover{
+ border-radius:0.5em;
+ outline: none!important;}
+
+ /*design drop box*/
+ .drop-down{
+ margin-top: 5em;}
+ 
+ .dropbtn {
+ background-color:gray !important;
+ color: white;
+ padding: 16px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;}
+ 
+ 
+ .dropbtn:hover{
+ background-color:green !important;}
+ 
+ .dropbtn:hover, .dropbtn:focus {
+ background-color: #3e8e41;
+ }
+ 
+ 
+ #myInput {
+ box-sizing: border-box;
+ background-image: url('searchicon.png');
+ background-position: 14px 12px;
+ background-repeat: no-repeat;
+ font-size: 16px;
+ padding: 14px 20px 12px 45px;
+ border: none;
+ border-bottom: 1px solid #ddd;
+ }
+ 
+ #myInput:focus {outline: 3px solid #ddd;}
+ 
+ .dropdown {
+ position: relative;
+ display: inline-block;
+ }
+ 
+ .dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f6f6f6;
+ min-width: 230px;
+ overflow: auto;
+ border: 1px solid #ddd;
+ z-index: 1;
+ }
+ 
+ .dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;}
+ 
+ 
+ .dropdown a:hover {background-color: #ddd;}
+ 
+ .show {display: block;}
+ 
+ /*design drop box*/
+
+/*batmanrun*/
+
+.batmandemo{
+ position:relative;
+ width: 100%;
+ height:auto;}
+ 
+ .batmandemo img{
+ margin-top:1em;
+  position: absolute;
+  left:0;
+  width:200px;
+  height:150px;
+  animation:batmandemo 3s infinite linear;}
+  
+  /*animation*/
+  @keyframes batmandemo{
+   0{left:0;}
+   100%{left:80%;}
+ }
+ 
+ /*batmanrun closed*/
+ 
+ /*batman running code*/
+ .batmanrun{
+ margin-top:12em;
+ padding-top:1em;
+ padding-left:2em;
+ padding-bottom:1.5em;
+ background-color:orange !important;
+ box-shadow:0 5px 10px 0 rgba(0,0,0,0.3);}
+ 
+ .batmanrun h2{
+ margin-top:2em;}
+ 
+ /*batmanruning code*/
+ 
+ /*copyright*/
+ .copyright{
+     margin-top: 5em;
+     
+   background-color:black!important;
+   width:100%;}
+   
+ .copyright h6{
+     position: relative;
+     text-align:center;
+     top:5px;
+     color:white!important;
+     font-size:13px;
+     opacity: 0.8;}
+  
+   /*copyright closed*/
+
+
+/*responsive starts*/ 
+    /*responsive starts*/
+    /*responsive starts*/
+     @media (min-width:1200px){
+             
+    }
+ 
+    @media (max-width:990px){
+             
+    }
+ 
+    @media (max-width:800px){
+                
+    }
+ 
+    @media (max-width:600px){
+                
+    }
+ 
+    @media (max-width:480px){
+    /*drop down box*/
+    .dropdown-content {
+    height:80vh;
+    overflow: scroll;
+    max-width:300px;
+    }
+      /*drop down box end*/
+    
+    
+    /*batmanrun*/
+    .batmandemo img{
+    margin-top:2em;
+    left:-2em;
+    width:150px;
+    height:100px;}
+    
+    /*animation*/
+    @keyframes batmandemo{
+    0{left:0;}
+    100%{left:57%;}
+    }
+    
+    /*batmanrun closed*/
+    }
+    
+    /*responsive end*/
+    /*responsive end*/
+    /*responsive end*/
+    /*responsive end*/
+
+</style>
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img src="images/logo.jpeg" width=50px height=40px></a>
+
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="index.html">HOME</a>
+     </li>
+   
+      <li class="nav-item">
+      <a class="nav-link" href="websites.html">WEBSITES</a>
+      </li>
+        
+         <!-- Dropdown -->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+      LEARN
+      </a>
+      <div class="dropdown-menu">
+      <a class="dropdown-item" href="learn html/learnhtml.html">Html</a>
+      <a class="dropdown-item" href="learn css/learncss.html">Css</a>
+      <a class="dropdown-item" href="learn bootsrap/learnbootrap.html">Bootstrap</a>
+      </div>
+      </li>
+      
+      <li class="nav-item">
+      <a class="nav-link text-success" href="Batmanrunning(1).html">DESIGN FRAMES</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+<!---navbar closed--->
+
+<!--design search box-->
+    <div class="dropdown drop-down ml-1">
+    <button onclick="myFunction()" class="dropbtn">Design Frames Search</button>
+    <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        
+    <a class="text-light bg-primary" href="Batmanrunning(1).html">Batman Running Animation</a>
+    <a href="word_animation(1).html">Word Animation</a>
+    <a href="word-popup_animation_With_Navbar.html">Navbar With Logo Popup Animation</a>
+    <a href="left-to-right-repeat-animation.html">Left to Right Repeat Animation</a>
+    <a href="">topc of the Design</a>
+    <a href="">topc of the Design</a>
+    <a href="">topc of the Design</a>
+    <a href="">topc of the Design</a>
+    <a href="">topc of the Design</a>
+        
+    </div>
+    </div>
+    <!--design search box-->
+
+<!--animation demo-->
+
+<div class="batmandemo">
+ <img src="images/Qb3a.gif">
+ </div>
+
+<!--animation demo-->
+
+<!---animation code -->
+<div class="batmanrun container col-10">
+
+<h3 class="text-center">Batman Running Animation</h3><br>
+
+<h3 class="text-danger">Add In Html</h3>
+
+<p class="text-dark">
+
+&lt;!doctype html><br><br>
+&lt;html><br><br>
+&lt;head><br><br>
+
+&lt;title>animation&lt;/title><br><br>
+
+&lt;/head><br><br>
+
+&lt;body><br><br><br>
+
+&lt;!--animation--><br><br>
+
+&lt;div class="batmanrun"><br>
+  &lt;img src="Qb3a.gif"><br>
+ &lt;/div><br><br>
+
+&lt;!--animation-closed--><br><br><br>
+
+&lt;/body><br><br>
+&lt;/html><br><br>
+</h4>
+
+
+<h3 class="text-danger">Add In Css</h3>
+
+<p class="text-dark">
+
+&lt;style><br><br>
+*{margin:0; padding: 0;}<br><br><br>
+
+/*batmanrun*/<br><br>
+
+.batmanrun{<br>
+ position:relative;<br>
+ width: 100%;<br>
+ height:auto;}<br><br><br>
+ 
+ .batmanrun img{<br>
+ border-radius:5em;<br>
+  position: absolute;<br>
+  left:0;<br>
+  width:200px;<br>
+  height:150px;<br>
+  animation:batmanrun 3s infinite linear;}<br><br><br>
+  
+  /*animation*/<br><br>
+  @keyframes batmanrun{<br>
+   0{left:0;}<br>
+   100%{left:85%;}<br>
+ }<br><br>
+ 
+ /*batmanrun closed*/<br><br>
+ 
+&lt;/style><br><br>
+</p>
+
+</div>
+
+<!--animation code-->
+
+<!--copyright-->
+<div class="copyright container-fluid bg-dark text-light">
+
+<div class="row">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+<h6>Copyright © All rights Reserved:Ulearno</h6>
+</div>
+
+</div>
+</div>
+    
+<!--copyright closed-->
+
+
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    a[i].style.display = "";
+    } else {
+    a[i].style.display = "none";
+    }
+    }
+    
+    }
+    </script>
+
+      
+</body>
+</html>

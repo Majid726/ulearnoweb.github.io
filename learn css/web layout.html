@@ -1,0 +1,508 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>website latout</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+html{
+   scroll-behavior:smooth;}
+
+*{margin:0;
+padding:0;
+font-family: 'Poppins', sans-serif;}
+
+    .introduction{
+        padding: 2em;
+        background-color:gainsboro!important;
+    }
+    
+.navbar{
+ opacity: 0.9;}
+
+ /*design drop box*/
+ .drop-down{
+ margin-top: 5em;}
+ 
+ .dropbtn {
+ background-color:gray !important;
+ color: white;
+ padding: 16px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;}
+ 
+ 
+ .dropbtn:hover{
+ background-color:green !important;}
+ 
+ .dropbtn:hover, .dropbtn:focus {
+ background-color: #3e8e41;
+ }
+ 
+ 
+ #myInput {
+ box-sizing: border-box;
+ background-image: url('searchicon.png');
+ background-position: 14px 12px;
+ background-repeat: no-repeat;
+ font-size: 16px;
+ padding: 14px 20px 12px 45px;
+ border: none;
+ border-bottom: 1px solid #ddd;
+ }
+ 
+ #myInput:focus {outline: 3px solid #ddd;}
+ 
+ .dropdown {
+ position: relative;
+ display: inline-block;
+ }
+ 
+ .dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f6f6f6;
+ min-width: 230px;
+ overflow: auto;
+ border: 1px solid #ddd;
+ z-index: 1;
+ height:37em !important;
+ }
+ 
+ .dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;}
+ 
+ 
+ .dropdown a:hover {background-color: #ddd;}
+ 
+ .show {display: block;}
+ 
+ /*design drop end */
+    
+ /*css-navigation start*/
+     .weblayout{ 
+    padding:2em;
+    height:232em;}
+    
+    pre{
+    border-radius:0 0 2em 2em;
+    padding:2em;}
+
+    /*navbar start*/
+    
+    .navbars{
+            background-color:white!important;
+              padding-top: 1em;
+              padding-bottom: 1em;
+             padding-right: 3em;
+             padding-left:3em;
+                      }
+    
+    .navbars a{
+        color:gray !important;
+    }
+          
+      .navbars ul{
+          float:right; 
+          list-style-type: none;
+          }
+        
+     .navbars li{
+         display:inline;
+         padding-left: 1em;}
+        
+    .navbars li a{
+         text-decoration: none !important;
+         color:gray !important;
+         transition: 0.3s ease;}
+        
+    .navbars li a:hover{
+        color:orange !important;}
+    
+    /*css-navigation end*/ 
+
+
+
+      /*main image starts*/
+        
+        .mainimage{
+        background-image: linear-gradient(rgba(0,180,270,0.5),rgba(0,180,270,0.3)),url('../images/majidn.jpg');
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        width:100%;
+        height:100vh;
+        background-attachment: fixed;}
+        
+        
+        .mainimage h1{
+            position: absolute;
+            color:white;
+            padding-bottom: 0.3em;
+            padding-left: 1em;
+            padding-top: 0.3em;
+            width:21em;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+        top: 13em;
+        left: 2em;
+        }
+        
+        .mainimage p{  
+            position: absolute;
+            color:white;
+            padding-bottom: 0.3em;
+            padding-left: 1em;
+            padding-top: 0.3em;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+        top:38em;
+        left:5em;}
+        
+        .mainimage .button a{
+         position: absolute;
+            text-decoration: none;
+            color:black;
+            background-color: aliceblue;
+            border-radius:2em;
+            padding-bottom: 0.3em;
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-top: 0.3em;
+            opacity: 0.9;
+        top:43em;
+        left: 5em;
+        }
+        
+        .mainimage .button:hover a{ 
+            opacity: 0.99;
+            color:black;
+            background-color: aliceblue;
+        box-shadow:0 0 20px 0 rgba(0,0,0,0.4);}
+        
+           /*main image end*/
+    
+    
+ /*copyright*/
+.copyright{
+     margin-top: 10em;
+   background-color:black!important;
+   width:100%;}
+   
+ .copyright h6{
+     color:white!important;
+     text-align: center;
+     font-size:13px;
+ margin-top:1.4em;
+ padding-bottom:1em;
+ opacity: 0.8;}
+  
+   /*copyright closed*/
+
+
+    
+ </style>
+    
+</head>
+
+<body>
+   
+   <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img src="../images/logo.jpeg" width=50px height=40px></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="../index.html">HOME</a>
+     </li>
+   
+      <li class="nav-item">
+      <a class="nav-link" href="../websites.html">WEBSITES</a>
+      </li>
+        
+         <!-- Dropdown -->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-success" href="#" id="navbardrop" data-toggle="dropdown">
+      LEARN
+      </a>
+      <div class="dropdown-menu">
+     <a class="dropdown-item" href="../learn html/learnhtml.html">Html</a>
+      <a class="dropdown-item text-success" href="learncss.html">Css</a>
+      <a class="dropdown-item" href="../learnbootrap/learnbootrap.html">Bootsrap</a>
+      </div>
+      </li>
+      
+      <li class="nav-item">
+      <a class="nav-link" href="../Batmanrunning(1).html">DESIGN FRAMES</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!---navbar closed--->
+
+
+<!--design search box-->
+    <div class="dropdown drop-down ml-1">
+    <button onclick="myFunction()" class="dropbtn">Css Learning Topics</button>
+    <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    
+  
+     <a href="learncss.html">Get Started</a>
+    <a href="css_structure_.html">Structure of Css</a>
+    <a href="css_comment.html">Comments</a>
+    <a href="css-color.html">Color</a>
+    <a href="css_background_color.html">Background</a>    
+    <a href="css-borders.html">Borders</a>
+    <a href="css-margin.html">Margins</a>
+    <a href="css-padding.html">Paddings</a>
+    <a href="css-height-width.html">Height/Width</a>
+    <a href="css-fonts.html">Fonts</a>
+    <a href="css-image.html">Image</a>
+    <a href="css_-class_-id.html">Class And Id</a> 
+    <a href="csso-overflow.html">Overflow</a>
+    <a href="css-float.html">Float</a>
+    <a href="css-display-inline.html">Display</a>
+    <a href="css-align.html">Align</a>   
+    <a href="css-opacity.html">Opacity</a>   
+    <a href="css-hover.html">Hover</a> 
+    <a href="css-navigationbar.html">Navigation-bar</a> 
+    <a href="css-photo-galary.html">Photo-Galary</a>   
+    <a href="web layout.html"  class="text-white bg-success">web layout</a> 
+        
+    </div>
+    </div>
+    
+    <!--design search box closed-->
+    
+        <!---css-navigation start-->
+        <div class="weblayout container text-white bg-dark mt-5">
+        <h2 class="text-center text-white">Website layout</h2>
+      
+      <!--navbar-->      
+    <div class="navbars">
+    <a>BRAND COMPANEY</a>
+    <ul>
+        <li><a href="#">HOME</a></li>
+         <li><a href="#">ABOUT</a></li>
+         <li><a href="#">SRVICES</a></li>
+         <li><a href="#">PAGES</a></li>
+         <li><a href="#">CONTACT</a></li>
+
+    </ul>
+</div>
+
+    <!--navbar end-->  
+
+<!--mainimage-->
+<div class="bg-dark">
+    <div class="mainimage">
+        <h1>THE WEBSITE ALL OVER THE COUNTRY</h1>
+        <P>It is the best website for any type of work
+        It is the best website for any type of work<br>
+        It is the best website for any type of work
+        It is the best website for any type of work</P>
+        
+        <div class='button'>
+            <a href=""> Click Me</a></div>
+    </div>
+    
+        
+       
+    </div>
+    <!--mainimage end-->
+            
+<pre class="bg-white">
+<h4>Add in Html</h4>
+&lt;!doctype html>
+               
+&lt;html>
+    
+&lt;head>
+                      
+&lt;title>navigation-bar&lt;/title>
+     
+&lt;/head>
+            
+&lt;body>
+
+<span class="text-danger">&lt;!--NAVBAR START--></span>
+
+ <span class="text-primary">&lt;div class="navbar"></span>
+    <span class="text-success">&lt;a>BRAND COMPANEY&lt;/a>
+        &lt;li>&lt;a href="#">HOME&lt;/a>&lt;/li>
+         &lt;li>&lt;a href="#">ABOUT&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">SRVICES&lt;/a>&lt;/li>
+         &lt;li>&lt;a href="#">PAGES&lt;/a>&lt;/li>
+         &lt;li>&lt;a href="#">CONTACT&lt;/a>&lt;/li>
+
+    &lt;/ul></span>
+ <span class="text-primary">&lt;/div></span>
+
+     <span class="text-primary">&lt;div class="mainimage"></span>
+         <span class="text-success">&lt;h1>THE WEBSITE ALL OVER THE COUNTRY&lt;/h1>
+        &lt;P>It is the best website for any type of work
+        It is the best website for any type of work&lt;br>
+        It is the best website for any type of work
+        It is the best website for any type of work&lt;/P>
+        
+        &lt;div class='button'>
+            &lt;a href=""> Click Me&lt;/a>&lt;/div></span>
+    <span class="text-primary"> &lt;/div></span>
+    
+    <span class="text-danger">&lt;!--NAVBAR END--></span>
+            
+ &lt;/body>
+            
+ &lt;/html>
+            
+ <H4>Add in Css</H4>
+  <span class="text-danger">/*navbar starts*/</span>
+        
+        <span class="text-primary">.navbar</span>{
+            <span class="text-success">background-color:white;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-right: 7em;
+            padding-left:7em;
+            opacity:0.6;
+            box-shadow:0 0 20px 0 rgba(0,0,0,0.5);</span>}
+          
+      <span class="text-primary">ul</span>{
+          <span class="text-success">float:right; 
+          list-style-type: none;</span>}
+        
+    <span class="text-primary">li</span>{
+        <span class="text-success">display:inline;
+         padding-left: 1em;</span>}
+        
+     <span class="text-primary">li a</span>{
+         <span class="text-success">text-decoration: none;
+         color:black;
+         transition: 0.3s ease:,</span>}
+        
+    <span class="text-primary">li a:hover</span>{
+        color:orange;}
+        
+          <span class="text-danger">/*navbar end*/</span>
+        
+          <span class="text-danger">/*main image starts*/</span>
+        
+        <span class="text-primary">.mainimage</span>{
+         <span class="text-success">background-image: linear-gradient(rgba(0,180,270,0.5),rgba(0,180,270,0.3)),url('majidn.jpg');
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        width:100%;
+        height:100vh;
+        background-attachment: fixed;</span>}
+        
+        
+        <span class="text-primary">.mainimage h1</span>{
+            <span class="text-success">position: absolute;
+            color:white;
+            padding-bottom: 0.3em;
+            padding-left: 1em;
+            padding-top: 0.3em;
+            width:22em;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+        top: 10em;
+        left: 2em;</span>
+        }
+        
+        <span class="text-primary">.mainimage p</span>{  
+            <span class="text-success">position: absolute;
+            color:white;
+            padding-bottom: 0.3em;
+            padding-left: 1em;
+            padding-top: 0.3em;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+        top:24em;
+        left: 4em;</span>}
+        
+        <span class="text-primary">.mainimage .button a</span>{
+         <span class="text-success">position: absolute;
+            text-decoration: none;
+            color:black;
+            background-color: aliceblue;
+            border-radius:2em;
+            padding-bottom: 0.3em;
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-top: 0.3em;
+            opacity: 0.9;
+        top:28em;
+        left: 4em;</span>
+        }
+        
+        <span class="text-primary">.mainimage .button:hover a</span>{ 
+            <span class="text-success">opacity: 0.99;
+            color:black;
+            background-color: aliceblue;
+        box-shadow:0 0 20px 0 rgba(0,0,0,0.4);</span>}
+        
+            <span class="text-danger">/*main image end*/</span>
+        <!--css-hover end-->
+      </pre>
+
+    </div>
+    
+<!--copyright-->
+<div class="copyright container-fluid bg-dark text-light">
+
+<div class="row">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+<h6>Copyright © All rights Reserved: Ulearno</h6>
+</div>
+
+</div>
+</div>
+<!--copyright closed-->
+
+               
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    a[i].style.display = "";
+    } else {
+    a[i].style.display = "none";
+    }
+    }
+    
+    }
+    </script>
+
+</body>
+</html>

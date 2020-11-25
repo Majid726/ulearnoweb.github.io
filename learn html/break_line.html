@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>break line</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+html{
+   scroll-behavior:smooth;}
+
+*{margin:0;
+padding:0;
+font-family: 'Poppins', sans-serif;}
+
+    .introduction{
+        padding: 2em;
+        background-color:gainsboro!important;
+    }
+    
+.navbar{
+ opacity: 0.9;}
+ 
+ .navbar-toggler,.navbar-toggler:hover{
+ border-radius:0.5em;
+ outline: none!important;}
+
+ /*design drop box*/
+ .drop-down{
+ margin-top: 5em;}
+ 
+ .dropbtn {
+ background-color:gray !important;
+ color: white;
+ padding: 16px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;}
+ 
+ 
+ .dropbtn:hover{
+ background-color:green !important;}
+ 
+ .dropbtn:hover, .dropbtn:focus {
+ background-color: #3e8e41;
+ }
+ 
+ 
+ #myInput {
+ box-sizing: border-box;
+ background-image: url('searchicon.png');
+ background-position: 14px 12px;
+ background-repeat: no-repeat;
+ font-size: 16px;
+ padding: 14px 20px 12px 45px;
+ border: none;
+ border-bottom: 1px solid #ddd;
+ }
+ 
+ #myInput:focus {outline: 3px solid #ddd;}
+ 
+ .dropdown {
+ position: relative;
+ display: inline-block;
+ }
+ 
+ .dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f6f6f6;
+ min-width: 230px;
+ overflow: auto;
+ border: 1px solid #ddd;
+ z-index: 1;
+  height:37em !important;
+ }
+ 
+ .dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;}
+ 
+ 
+ .dropdown a:hover {background-color: #ddd;}
+ 
+ .show {display: block;}
+ 
+ /*design drop end */
+    
+ /*break*/
+     .breakline{  padding:2em;
+         height:48em;}
+    pre{border-radius:2em;
+    padding:2em;}
+   
+    /*break end*/
+    
+    
+ /*copyright*/
+ .copyright{
+     margin-top: 2em;}
+   
+ .copyright h6{
+ color:white!important;
+ font-size:13px;
+ text-align: center;
+ margin-top:1.4em;
+ padding-bottom:1em;
+ opacity: 0.8;}
+
+   /*copyright closed*/
+   
+   
+   /*responsive starts*/ 
+   /*responsive starts*/
+   /*responsive starts*/
+   @media (min-width:1200px){
+   
+   }
+   
+   @media (max-width:990px){
+   
+   }
+   
+   @media (max-width:800px){
+   
+   }
+   
+   @media (max-width:600px){
+   
+   }
+   
+   @media (max-width:480px){
+   /*drop down box*/
+   .dropdown-content {
+   height:80vh;
+   overflow: scroll;
+   max-width:300px;
+   }
+    /*drop down box end*/
+   
+   }
+   /*responsive end*/
+   /*responsive end*/
+   /*responsive end*/
+   /*responsive end*/
+
+
+ </style>
+    
+    </head>
+
+    <body>
+   
+   <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img src="../images/logo.jpeg" width=50px height=40px></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="../index.html">HOME</a>
+     </li>
+   
+      <li class="nav-item">
+      <a class="nav-link" href="../websites.html">WEBSITES</a>
+      </li>
+        
+         <!-- Dropdown -->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-success" href="#" id="navbardrop" data-toggle="dropdown">
+      LEARN
+      </a>
+      <div class="dropdown-menu">
+      <a class="dropdown-item text-success" href="learnhtml.html">Html</a>
+      <a class="dropdown-item" href="../learn css/learncss.html">Css</a>
+      <a class="dropdown-item" href="../learn bootsrap/learnbootrap.html">Bootstrap</a>
+          
+      </div>
+      </li>
+      
+      <li class="nav-item">
+      <a class="nav-link" href="../Batmanrunning(1).html">DESIGN FRAMES</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!---navbar closed--->
+
+
+<!--design search box-->
+    <div class="dropdown drop-down ml-1">
+    <button onclick="myFunction()" class="dropbtn">Html Learning Topics</button>
+    <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    
+  
+    <a href="learnhtml.html">Get Started</a>
+    <a href="structure_of_html_document.html">Structure of  an HTML</a>
+    <a href="heading.html">Heading</a>
+    <a href="paragraph.html">Paragraph</a>    
+    <a href="horizontal_line.HTML">Horizontal Line(HR )</a>
+    <a href="break_line.html" class="text-white bg-success">Break Line</a>
+    <a href="center_tag.html">Center Tag</a>
+    <a href="comment_tag.html">Comment Tag</a>
+    <a href="font_color.html">Font Color</a>
+    <a href="font_size.html">Font Size</a>
+    <a href="hreflink.html">Page Link</a> 
+    <a href="image.html">Set Image</a>
+    <a href="marquee.html">Marquee</a>
+    <a href="types_of_list_.html">List Tag</a>
+    <a href="table.html">Tables</a>
+    <a href="forms.html">Form</a> 
+        
+    </div>
+    </div>
+    <!--design search box closed-->
+    
+        <!---BREAK- start-->
+        <div class="breakline container text-white bg-dark mt-5">
+        <h2 class="text-center text-white">Line Break</h2>
+            <p>
+             BR is used to break the line.<br>Where you want use<br> for break line. 
+                
+            </p>
+        
+        <pre class="bg-white">
+  &lt;!doctype html><br>
+  &lt;html><br>
+  &lt;head><br>
+  &lt;title>  &lt;/title><br>
+  &lt;/head><br>
+  &lt;body><br>
+  &lt;p>BR is used to break the line<a class="text-primary"> &lt;br> </a><br>
+  Where you want use<a class="text-primary">&lt;br> </a> </a><br>
+  for Break the line.&lt;p>
+ 
+  &lt;/body><br>
+  &lt;/html><br>
+               
+           </pre>
+        
+        </div>
+        <!--BREAK-- CLOSED-->
+    
+<!--copyright-->
+<div class="copyright container-fluid bg-dark">
+
+<div class="row">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+<h6>Copyright © All rights Reserved: Ulearno</h6>
+</div>
+
+</div>
+</div>
+<!--copyright closed-->
+
+               
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    a[i].style.display = "";
+    } else {
+    a[i].style.display = "none";
+    }
+    }
+    
+    }
+    </script>
+
+</body>
+</html>
